@@ -1,0 +1,56 @@
+// our css code will go here
+
+@import './vendor/normalize';
+@import './partials/colors';
+@import './partials/mixins';
+
+
+// nesting tags
+nav {
+    background-color: $header-color;
+    ul {
+        margin-bottom: 50px;
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.buy-cta {
+   @include underline-button(5px);
+}
+
+.contact-us-cta {
+   @include underline-button(25px);
+}
+
+.section-title {
+    color: $primary-font-color;
+}
+//nesting class
+//.container {
+    //.content{
+        //background-color: aqua;
+        //p{
+            //color: red;
+        //}
+    //}
+    //.feature-image {
+        //background-color: tomato;
+    //}
+//}
+
+
+//body{
+    //background-color: yellow;
+//}
+
+//@media (min-width: 1024px) {
+    //body {
+        //background-color: navy;
+    //}
+//}
