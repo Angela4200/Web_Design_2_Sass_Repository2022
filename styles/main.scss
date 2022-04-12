@@ -3,54 +3,88 @@
 @import './vendor/normalize';
 @import './partials/colors';
 @import './partials/mixins';
-
+@import './partials/typography';
 
 // nesting tags
 nav {
-    background-color: $header-color;
+    background-color: $darker-background;
     ul {
-        margin-bottom: 50px;
+        margin: 50px;
+        padding: 15px;
+        position: relative;
+        tab-size: 4px;
         li {
-            display: inline-block;
+            float: right;
             a {
                 text-decoration: none;
+                font-family: $primary-font;
                 color: $white-color;
+                text-transform: uppercase;
+                float: right;
             }
         }
     }
 }
 
-.buy-cta {
-   @include underline-button(5px);
-}
-
-.contact-us-cta {
-   @include underline-button(25px);
+.brand {
+    float: left;
+    color: $white-color;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 17px;
+    text-transform: uppercase;
 }
 
 .section-title {
-    color: $primary-font-color;
+   @include discover-title($secondary-font-color);
 }
-//nesting class
-//.container {
-    //.content{
-        //background-color: aqua;
-        //p{
-            //color: red;
-        //}
-    //}
-    //.feature-image {
-        //background-color: tomato;
-    //}
-//}
 
+.h2 {
+    text-align: left;
+    margin: 60px;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 40px;
+    top: 150px;
+    left: 180px;
+}
 
-//body{
-    //background-color: yellow;
-//}
+.section-paragraph {
+    @include section-paragraph($primary-font-color);
+}
 
-//@media (min-width: 1024px) {
-    //body {
-        //background-color: navy;
-    //}
-//}
+.about-us {
+    color: $secondary-font-color;
+    font-family: $title-font;
+    text-transform: uppercase;
+    position: absolute;
+    top: 500px;
+    left: 315px;
+}
+
+.image {
+        position: absolute;
+        top: 150px;
+        right: 0px;
+        width: 40%;
+        float: right;
+        padding: 30px;
+    }
+
+.star{
+    padding: 15px;
+    position: absolute;
+    top: 250px;
+    left: 330px;
+     }
+     
+   
+body{
+    background-color: $dark-background;
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: $white-color;
+    }
+}

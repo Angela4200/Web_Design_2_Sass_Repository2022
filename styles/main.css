@@ -5,6 +5,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -342,33 +345,106 @@ template {
 }
 
 nav {
-  background-color: grey;
+  background-color: #150300;
 }
 
 nav ul {
-  margin-bottom: 50px;
+  margin: 50px;
+  padding: 15px;
+  position: relative;
+  -moz-tab-size: 4px;
+    -o-tab-size: 4px;
+       tab-size: 4px;
 }
 
 nav ul li {
-  display: inline-block;
+  float: right;
 }
 
 nav ul li a {
   text-decoration: none;
+  font-family: "Dosis", sans-serif;
   color: #fff;
+  text-transform: uppercase;
+  float: right;
 }
 
-.buy-cta {
-  background-color: #d127ca;
+.brand {
+  float: left;
   color: #fff;
+  text-align: center;
   text-decoration: underline;
-  border-radius: 5px;
+  font-size: 17px;
+  text-transform: uppercase;
 }
 
-.contact-us-cta {
-  background-color: #d127ca;
-  color: #fff;
-  text-decoration: underline;
-  border-radius: 25px;
+.section-title {
+  color: #DB8D33;
+  font-family: "Marck Script", cursive;
+  font-size: 40px;
+  font-style: italic;
+  text-align: left;
+  position: absolute;
+  top: 140px;
+  left: 290px;
+}
+
+.h2 {
+  text-align: left;
+  margin: 60px;
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 40px;
+  top: 150px;
+  left: 180px;
+}
+
+.section-paragraph {
+  color: #575757;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 25px 50px 75px 100px;
+  position: absolute;
+  top: 260px;
+  left: 150px;
+  font-size: 20px;
+}
+
+.about-us {
+  color: #DB8D33;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  top: 500px;
+  left: 315px;
+}
+
+.image {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  width: 40%;
+  float: right;
+  padding: 30px;
+}
+
+.star {
+  padding: 15px;
+  position: absolute;
+  top: 250px;
+  left: 330px;
+}
+
+body {
+  background-color: #414141;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-color: #fff;
+  }
 }
 /*# sourceMappingURL=main.css.map */
